@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- <h1>Calculator</h1> -->
+    <form class="calculator" id="form" name="calc">
+        <input class="value" type="text" name="txt" readonly=""/>
+        <span class="num clear" onclick="document.calc.txt.value =''">c</span>
+        <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+        <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+        <span class="num" id="backspace" onclick="backSpace()"><i class="fas fa-backspace"></i></span>
+        <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+        <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+        <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+        <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+        <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+        <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+        <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+        <span class="num" onclick="document.calc.txt.value +='+'">+</span>
+        <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+        <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+        <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+        <span class="num" onclick="document.calc.txt.value +='%'">%</span>
+        <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+        <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+        <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>
